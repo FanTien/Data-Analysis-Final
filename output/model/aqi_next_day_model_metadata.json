@@ -1,0 +1,48 @@
+{
+  "selected_method": "Ridge",
+  "selection_metric": "Validation MAE, then RMSE",
+  "ridge_alpha": 0.1,
+  "ridge_refit": "Train+Validation",
+  "features": [
+    "AQI_lag_1",
+    "AQI_lag_2",
+    "AQI_lag_3",
+    "AQI_lag_4",
+    "AQI_lag_5",
+    "AQI_lag_6",
+    "AQI_lag_7"
+  ],
+  "target": "AQI_target",
+  "train_samples": 702,
+  "validation_samples": 351,
+  "test_samples": 181,
+  "validation_metrics": {
+    "Ridge": {
+      "MAE": 23.388285,
+      "RMSE": 34.865801
+    },
+    "Persistence": {
+      "MAE": 24.818139,
+      "RMSE": 38.729188
+    },
+    "Weekly": {
+      "MAE": 41.25273,
+      "RMSE": 58.37192
+    }
+  },
+  "test_metrics": {
+    "Persistence": {
+      "MAE": 24.708333,
+      "RMSE": 32.049131
+    },
+    "Weekly": {
+      "MAE": 37.302716,
+      "RMSE": 49.14936
+    },
+    "Ridge": {
+      "MAE": 22.399229,
+      "RMSE": 29.65768
+    }
+  },
+  "test_only_first_half_2025": true
+}
